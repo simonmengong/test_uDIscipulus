@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>
+            Udacity Discipulus
+        </title>
+        <link rel="shortcut icon" href="img/u.png" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/home.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <div id="complete">
+            <div id="navbar" class="navbar">
+                <p>
+                    <a href="#"><img class="logo" src="img/u.png"></a>
+                    <a href="#" class="appname" style="text-decoration: none;">Udacity Discipulus</a>
+                    <a href="about.html" style="text-decoration: none;margin-left: auto;" class="navlink">About</a>
+                    <a href="features.html" style="text-decoration: none;margin-right: 0;" class="navlink">Features</a>
+                </p>
+            </div>
+            <div id="desc_img">
+                <div id="desc">
+                    <p style="font-size: 35px; margin-top: 250px">Simple. Secure.</p>
+                    <p style="font-size: 35px; margin-top: 10px">Reliable messaging.</p>
+                    <p style="font-size: 18px; margin-top: 30px; color: rgba(0,0,0, .6); line-height: 25px;">With WhatsApp, you'll get fast, simple, secure messaging and calling for free*, available on phones all over the world.</p>
+                    <p style="font-size: 13px; margin-top: 20px; color: rgba(0,0,0, .25);">* Data charges may apply. Contact your provider for details.</p>
+                </div>
+                <div id="img">
+                    <img src="img/homeimg.png">
+                </div>
+            </div>
+            <div id="features">
+                <p style="margin-top: 150px; text-align: center;">
+                    <a href="features.html" class="features">EXPLORE FEATURES</a>
+                </p>
+            </div>
+            <div id="copyright">
+                <p style="font-size: 16px; font-family: 'Roboto', sans-serif; margin-top:25px;margin-left:10%">
+                    <span style="margin-right: 100px; color: rgba(255, 255, 255, .5)">2018 © Melius Lab</span>
+                    <a href="mailto:elie.wanko@gmail.com" style="text-decoration: none;" class="navlink">Contact</a>
+                    <a href="privacy&terms.html" style="text-decoration: none;" class="navlink">Privacy & Terms</a>
+                </p>
+            </div>
+        </div>
+        <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+
+            // Get the navbar
+            var navbar = document.getElementById("navbar");
+
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.remove("navbar");
+                    navbar.classList.add("sticky");
+                }
+                else {
+                    navbar.classList.remove("sticky");
+                    navbar.classList.add("navbar");
+                }
+            }
+        </script>
+    </body>
+</html>
